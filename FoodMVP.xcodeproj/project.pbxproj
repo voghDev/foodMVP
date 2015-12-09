@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		586222381C16E8DB00001674 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222351C16E8DB00001674 /* FoodItem.m */; };
+		586222391C16E8DB00001674 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222371C16E8DB00001674 /* User.m */; };
+		5862223C1C16E8F800001674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862223B1C16E8F800001674 /* AppDelegate.m */; };
+		5862224B1C16E9FB00001674 /* MockFoodRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222471C16E9FB00001674 /* MockFoodRepository.m */; };
+		5862224C1C16E9FB00001674 /* UserRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862224A1C16E9FB00001674 /* UserRepositoryImpl.m */; };
+		586222511C16EA7D00001674 /* GetUsersApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222501C16EA7D00001674 /* GetUsersApiImpl.m */; };
+		586222561C16EA8800001674 /* GetFoodMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222531C16EA8800001674 /* GetFoodMockImpl.m */; };
+		586222571C16EA8800001674 /* GetUsersMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222551C16EA8800001674 /* GetUsersMockImpl.m */; };
+		5862225F1C16EB9D00001674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862225E1C16EB9D00001674 /* main.m */; };
+		586222621C16F2E200001674 /* FoodTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222611C16F2E200001674 /* FoodTableViewDataSource.m */; };
+		586222651C16F38700001674 /* NavigateToDetailSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222641C16F38700001674 /* NavigateToDetailSegue.m */; };
+		5862226C1C16F3A300001674 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222691C16F3A300001674 /* DetailViewController.m */; };
+		5862226D1C16F3A300001674 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862226B1C16F3A300001674 /* MainViewController.m */; };
+		586222721C16F3B300001674 /* DetailPresenterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862226F1C16F3B300001674 /* DetailPresenterImpl.m */; };
+		586222731C16F3B300001674 /* MainPresenterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222711C16F3B300001674 /* MainPresenterImpl.m */; };
+		586222771C16F6E900001674 /* MainViewMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222761C16F6E900001674 /* MainViewMockImpl.m */; };
+		5862227D1C16FD3800001674 /* MainPresenterMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862227C1C16FD3800001674 /* MainPresenterMockImpl.m */; };
+		586222821C16FEEA00001674 /* UserMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222811C16FEEA00001674 /* UserMockRepository.m */; };
+		586222871C17012F00001674 /* FoodMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222861C17012F00001674 /* FoodMockRepository.m */; };
+		58D84D4C1BF2238A00B01392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4A1BF2238A00B01392 /* Main.storyboard */; };
+		58D84D4E1BF2238A00B01392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4D1BF2238A00B01392 /* Images.xcassets */; };
+		58D84D511BF2238A00B01392 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4F1BF2238A00B01392 /* LaunchScreen.xib */; };
+		58D84D5D1BF2238A00B01392 /* FoodMVPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D84D5C1BF2238A00B01392 /* FoodMVPTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58D84D571BF2238A00B01392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58D84D351BF2238A00B01392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58D84D3C1BF2238A00B01392;
+			remoteInfo = FoodMVP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		584590681C174831003A4A1B /* MainPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPresenter.h; path = ui/presenter/MainPresenter.h; sourceTree = "<group>"; };
+		584590691C174973003A4A1B /* DetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailPresenter.h; path = ui/presenter/DetailPresenter.h; sourceTree = "<group>"; };
+		5845906A1C17508D003A4A1B /* MainPresenterStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPresenterStatus.h; path = status/MainPresenterStatus.h; sourceTree = "<group>"; };
+		586222341C16E8DB00001674 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodItem.h; path = global/model/FoodItem.h; sourceTree = "<group>"; };
+		586222351C16E8DB00001674 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodItem.m; path = global/model/FoodItem.m; sourceTree = "<group>"; };
+		586222361C16E8DB00001674 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = global/model/User.h; sourceTree = "<group>"; };
+		586222371C16E8DB00001674 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = global/model/User.m; sourceTree = "<group>"; };
+		5862223A1C16E8F800001674 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = global/AppDelegate.h; sourceTree = "<group>"; };
+		5862223B1C16E8F800001674 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = global/AppDelegate.m; sourceTree = "<group>"; };
+		586222451C16E9FB00001674 /* FoodRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodRepository.h; path = repository/FoodRepository.h; sourceTree = "<group>"; };
+		586222461C16E9FB00001674 /* MockFoodRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockFoodRepository.h; path = repository/MockFoodRepository.h; sourceTree = "<group>"; };
+		586222471C16E9FB00001674 /* MockFoodRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockFoodRepository.m; path = repository/MockFoodRepository.m; sourceTree = "<group>"; };
+		586222481C16E9FB00001674 /* UserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRepository.h; path = repository/UserRepository.h; sourceTree = "<group>"; };
+		586222491C16E9FB00001674 /* UserRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRepositoryImpl.h; path = repository/UserRepositoryImpl.h; sourceTree = "<group>"; };
+		5862224A1C16E9FB00001674 /* UserRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRepositoryImpl.m; path = repository/UserRepositoryImpl.m; sourceTree = "<group>"; };
+		5862224D1C16EA7300001674 /* GetFood.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetFood.h; path = datasource/GetFood.h; sourceTree = "<group>"; };
+		5862224E1C16EA7300001674 /* GetUsers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GetUsers.h; path = datasource/GetUsers.h; sourceTree = "<group>"; };
+		5862224F1C16EA7D00001674 /* GetUsersApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetUsersApiImpl.h; path = datasource/api/GetUsersApiImpl.h; sourceTree = "<group>"; };
+		586222501C16EA7D00001674 /* GetUsersApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetUsersApiImpl.m; path = datasource/api/GetUsersApiImpl.m; sourceTree = "<group>"; };
+		586222521C16EA8800001674 /* GetFoodMockImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetFoodMockImpl.h; path = datasource/mock/GetFoodMockImpl.h; sourceTree = "<group>"; };
+		586222531C16EA8800001674 /* GetFoodMockImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetFoodMockImpl.m; path = datasource/mock/GetFoodMockImpl.m; sourceTree = "<group>"; };
+		586222541C16EA8800001674 /* GetUsersMockImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetUsersMockImpl.h; path = datasource/mock/GetUsersMockImpl.h; sourceTree = "<group>"; };
+		586222551C16EA8800001674 /* GetUsersMockImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetUsersMockImpl.m; path = datasource/mock/GetUsersMockImpl.m; sourceTree = "<group>"; };
+		5862225E1C16EB9D00001674 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = global/main.m; sourceTree = "<group>"; };
+		586222601C16F2E200001674 /* FoodTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTableViewDataSource.h; path = ui/tableview/FoodTableViewDataSource.h; sourceTree = "<group>"; };
+		586222611C16F2E200001674 /* FoodTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTableViewDataSource.m; path = ui/tableview/FoodTableViewDataSource.m; sourceTree = "<group>"; };
+		586222631C16F38700001674 /* NavigateToDetailSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigateToDetailSegue.h; path = ui/segue/NavigateToDetailSegue.h; sourceTree = "<group>"; };
+		586222641C16F38700001674 /* NavigateToDetailSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigateToDetailSegue.m; path = ui/segue/NavigateToDetailSegue.m; sourceTree = "<group>"; };
+		586222661C16F39200001674 /* DetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailView.h; path = ui/view/DetailView.h; sourceTree = "<group>"; };
+		586222671C16F39200001674 /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = ui/view/MainView.h; sourceTree = "<group>"; };
+		586222681C16F3A300001674 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ui/viewcontroller/DetailViewController.h; sourceTree = "<group>"; };
+		586222691C16F3A300001674 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ui/viewcontroller/DetailViewController.m; sourceTree = "<group>"; };
+		5862226A1C16F3A300001674 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ui/viewcontroller/MainViewController.h; sourceTree = "<group>"; };
+		5862226B1C16F3A300001674 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ui/viewcontroller/MainViewController.m; sourceTree = "<group>"; };
+		5862226E1C16F3B300001674 /* DetailPresenterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailPresenterImpl.h; path = ui/presenter/DetailPresenterImpl.h; sourceTree = "<group>"; };
+		5862226F1C16F3B300001674 /* DetailPresenterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailPresenterImpl.m; path = ui/presenter/DetailPresenterImpl.m; sourceTree = "<group>"; };
+		586222701C16F3B300001674 /* MainPresenterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainPresenterImpl.h; path = ui/presenter/MainPresenterImpl.h; sourceTree = "<group>"; };
+		586222711C16F3B300001674 /* MainPresenterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPresenterImpl.m; path = ui/presenter/MainPresenterImpl.m; sourceTree = "<group>"; };
+		586222751C16F6E900001674 /* MainViewMockImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewMockImpl.h; path = view/MainViewMockImpl.h; sourceTree = "<group>"; };
+		586222761C16F6E900001674 /* MainViewMockImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewMockImpl.m; path = view/MainViewMockImpl.m; sourceTree = "<group>"; };
+		586222791C16F8F400001674 /* MainViewStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewStatus.h; path = status/MainViewStatus.h; sourceTree = "<group>"; };
+		5862227C1C16FD3800001674 /* MainPresenterMockImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPresenterMockImpl.m; path = presenter/MainPresenterMockImpl.m; sourceTree = "<group>"; };
+		5862227E1C16FDAC00001674 /* MainPresenterMockImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPresenterMockImpl.h; path = presenter/MainPresenterMockImpl.h; sourceTree = "<group>"; };
+		586222801C16FEEA00001674 /* UserMockRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserMockRepository.h; path = repository/UserMockRepository.h; sourceTree = "<group>"; };
+		586222811C16FEEA00001674 /* UserMockRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserMockRepository.m; path = repository/UserMockRepository.m; sourceTree = "<group>"; };
+		586222831C16FF2C00001674 /* UserRepositoryStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserRepositoryStatus.h; path = status/UserRepositoryStatus.h; sourceTree = "<group>"; };
+		586222841C1700F400001674 /* FoodRepositoryStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FoodRepositoryStatus.h; path = status/FoodRepositoryStatus.h; sourceTree = "<group>"; };
+		586222851C17012F00001674 /* FoodMockRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodMockRepository.h; path = repository/FoodMockRepository.h; sourceTree = "<group>"; };
+		586222861C17012F00001674 /* FoodMockRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodMockRepository.m; path = repository/FoodMockRepository.m; sourceTree = "<group>"; };
+		58D84D3D1BF2238A00B01392 /* FoodMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D84D411BF2238A00B01392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D84D4B1BF2238A00B01392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58D84D4D1BF2238A00B01392 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		58D84D501BF2238A00B01392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		58D84D561BF2238A00B01392 /* FoodMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D84D5B1BF2238A00B01392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D84D5C1BF2238A00B01392 /* FoodMVPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodMVPTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58D84D3A1BF2238A00B01392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D84D531BF2238A00B01392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580331341BF4D1FE00D934B9 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				586222521C16EA8800001674 /* GetFoodMockImpl.h */,
+				586222531C16EA8800001674 /* GetFoodMockImpl.m */,
+				586222541C16EA8800001674 /* GetUsersMockImpl.h */,
+				586222551C16EA8800001674 /* GetUsersMockImpl.m */,
+				5862224F1C16EA7D00001674 /* GetUsersApiImpl.h */,
+				586222501C16EA7D00001674 /* GetUsersApiImpl.m */,
+				5862224D1C16EA7300001674 /* GetFood.h */,
+				5862224E1C16EA7300001674 /* GetUsers.h */,
+			);
+			name = datasource;
+			sourceTree = "<group>";
+		};
+		580331351BF4D20E00D934B9 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				586222451C16E9FB00001674 /* FoodRepository.h */,
+				586222461C16E9FB00001674 /* MockFoodRepository.h */,
+				586222471C16E9FB00001674 /* MockFoodRepository.m */,
+				586222481C16E9FB00001674 /* UserRepository.h */,
+				586222491C16E9FB00001674 /* UserRepositoryImpl.h */,
+				5862224A1C16E9FB00001674 /* UserRepositoryImpl.m */,
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
+		5810ED431BF9185A00E7925B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				586222341C16E8DB00001674 /* FoodItem.h */,
+				586222351C16E8DB00001674 /* FoodItem.m */,
+				586222361C16E8DB00001674 /* User.h */,
+				586222371C16E8DB00001674 /* User.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		583374651C16120E00E6FA7F /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				586222601C16F2E200001674 /* FoodTableViewDataSource.h */,
+				586222611C16F2E200001674 /* FoodTableViewDataSource.m */,
+			);
+			name = tableview;
+			sourceTree = "<group>";
+		};
+		586222741C16F63B00001674 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				586222751C16F6E900001674 /* MainViewMockImpl.h */,
+				586222761C16F6E900001674 /* MainViewMockImpl.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		586222781C16F8EB00001674 /* status */ = {
+			isa = PBXGroup;
+			children = (
+				5845906A1C17508D003A4A1B /* MainPresenterStatus.h */,
+				586222841C1700F400001674 /* FoodRepositoryStatus.h */,
+				586222831C16FF2C00001674 /* UserRepositoryStatus.h */,
+				586222791C16F8F400001674 /* MainViewStatus.h */,
+			);
+			name = status;
+			sourceTree = "<group>";
+		};
+		5862227A1C16FBF700001674 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5862227E1C16FDAC00001674 /* MainPresenterMockImpl.h */,
+				5862227C1C16FD3800001674 /* MainPresenterMockImpl.m */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		5862227F1C16FEE100001674 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				586222851C17012F00001674 /* FoodMockRepository.h */,
+				586222861C17012F00001674 /* FoodMockRepository.m */,
+				586222801C16FEEA00001674 /* UserMockRepository.h */,
+				586222811C16FEEA00001674 /* UserMockRepository.m */,
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
+		58C75C041C05F5260037A085 /* segue */ = {
+			isa = PBXGroup;
+			children = (
+				586222631C16F38700001674 /* NavigateToDetailSegue.h */,
+				586222641C16F38700001674 /* NavigateToDetailSegue.m */,
+			);
+			name = segue;
+			sourceTree = "<group>";
+		};
+		58D84D341BF2238A00B01392 = {
+			isa = PBXGroup;
+			children = (
+				58D84D3F1BF2238A00B01392 /* FoodMVP */,
+				58D84D591BF2238A00B01392 /* FoodMVPTests */,
+				58D84D3E1BF2238A00B01392 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58D84D3E1BF2238A00B01392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58D84D3D1BF2238A00B01392 /* FoodMVP.app */,
+				58D84D561BF2238A00B01392 /* FoodMVPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58D84D3F1BF2238A00B01392 /* FoodMVP */ = {
+			isa = PBXGroup;
+			children = (
+				580331351BF4D20E00D934B9 /* repository */,
+				580331341BF4D1FE00D934B9 /* datasource */,
+				58D84D691BF223CD00B01392 /* global */,
+				58D84D661BF2239900B01392 /* ui */,
+				58D84D4D1BF2238A00B01392 /* Images.xcassets */,
+				58D84D4F1BF2238A00B01392 /* LaunchScreen.xib */,
+				58D84D401BF2238A00B01392 /* Supporting Files */,
+			);
+			path = FoodMVP;
+			sourceTree = "<group>";
+		};
+		58D84D401BF2238A00B01392 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5862225E1C16EB9D00001674 /* main.m */,
+				58D84D411BF2238A00B01392 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58D84D591BF2238A00B01392 /* FoodMVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				5862227F1C16FEE100001674 /* repository */,
+				5862227A1C16FBF700001674 /* presenter */,
+				586222781C16F8EB00001674 /* status */,
+				586222741C16F63B00001674 /* view */,
+				58D84D5C1BF2238A00B01392 /* FoodMVPTests.m */,
+				58D84D5A1BF2238A00B01392 /* Supporting Files */,
+			);
+			path = FoodMVPTests;
+			sourceTree = "<group>";
+		};
+		58D84D5A1BF2238A00B01392 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58D84D5B1BF2238A00B01392 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58D84D661BF2239900B01392 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				583374651C16120E00E6FA7F /* tableview */,
+				58C75C041C05F5260037A085 /* segue */,
+				58D84D6E1BF224BC00B01392 /* view */,
+				58D84D6A1BF223DA00B01392 /* storyboard */,
+				58D84D681BF223BD00B01392 /* viewcontroller */,
+				58D84D671BF223A100B01392 /* presenter */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		58D84D671BF223A100B01392 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				584590691C174973003A4A1B /* DetailPresenter.h */,
+				584590681C174831003A4A1B /* MainPresenter.h */,
+				5862226E1C16F3B300001674 /* DetailPresenterImpl.h */,
+				5862226F1C16F3B300001674 /* DetailPresenterImpl.m */,
+				586222701C16F3B300001674 /* MainPresenterImpl.h */,
+				586222711C16F3B300001674 /* MainPresenterImpl.m */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		58D84D681BF223BD00B01392 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				586222681C16F3A300001674 /* DetailViewController.h */,
+				586222691C16F3A300001674 /* DetailViewController.m */,
+				5862226A1C16F3A300001674 /* MainViewController.h */,
+				5862226B1C16F3A300001674 /* MainViewController.m */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+		58D84D691BF223CD00B01392 /* global */ = {
+			isa = PBXGroup;
+			children = (
+				5862223A1C16E8F800001674 /* AppDelegate.h */,
+				5862223B1C16E8F800001674 /* AppDelegate.m */,
+				5810ED431BF9185A00E7925B /* model */,
+			);
+			name = global;
+			sourceTree = "<group>";
+		};
+		58D84D6A1BF223DA00B01392 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				58D84D4A1BF2238A00B01392 /* Main.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		58D84D6E1BF224BC00B01392 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				586222661C16F39200001674 /* DetailView.h */,
+				586222671C16F39200001674 /* MainView.h */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58D84D3C1BF2238A00B01392 /* FoodMVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D84D601BF2238A00B01392 /* Build configuration list for PBXNativeTarget "FoodMVP" */;
+			buildPhases = (
+				58D84D391BF2238A00B01392 /* Sources */,
+				58D84D3A1BF2238A00B01392 /* Frameworks */,
+				58D84D3B1BF2238A00B01392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodMVP;
+			productName = FoodMVP;
+			productReference = 58D84D3D1BF2238A00B01392 /* FoodMVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58D84D551BF2238A00B01392 /* FoodMVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D84D631BF2238A00B01392 /* Build configuration list for PBXNativeTarget "FoodMVPTests" */;
+			buildPhases = (
+				58D84D521BF2238A00B01392 /* Sources */,
+				58D84D531BF2238A00B01392 /* Frameworks */,
+				58D84D541BF2238A00B01392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58D84D581BF2238A00B01392 /* PBXTargetDependency */,
+			);
+			name = FoodMVPTests;
+			productName = FoodMVPTests;
+			productReference = 58D84D561BF2238A00B01392 /* FoodMVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58D84D351BF2238A00B01392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = voghdev;
+				TargetAttributes = {
+					58D84D3C1BF2238A00B01392 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					58D84D551BF2238A00B01392 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 58D84D3C1BF2238A00B01392;
+					};
+				};
+			};
+			buildConfigurationList = 58D84D381BF2238A00B01392 /* Build configuration list for PBXProject "FoodMVP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58D84D341BF2238A00B01392;
+			productRefGroup = 58D84D3E1BF2238A00B01392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58D84D3C1BF2238A00B01392 /* FoodMVP */,
+				58D84D551BF2238A00B01392 /* FoodMVPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58D84D3B1BF2238A00B01392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D84D4C1BF2238A00B01392 /* Main.storyboard in Resources */,
+				58D84D511BF2238A00B01392 /* LaunchScreen.xib in Resources */,
+				58D84D4E1BF2238A00B01392 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D84D541BF2238A00B01392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58D84D391BF2238A00B01392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586222571C16EA8800001674 /* GetUsersMockImpl.m in Sources */,
+				586222721C16F3B300001674 /* DetailPresenterImpl.m in Sources */,
+				586222561C16EA8800001674 /* GetFoodMockImpl.m in Sources */,
+				5862224B1C16E9FB00001674 /* MockFoodRepository.m in Sources */,
+				586222731C16F3B300001674 /* MainPresenterImpl.m in Sources */,
+				586222391C16E8DB00001674 /* User.m in Sources */,
+				586222651C16F38700001674 /* NavigateToDetailSegue.m in Sources */,
+				586222381C16E8DB00001674 /* FoodItem.m in Sources */,
+				586222621C16F2E200001674 /* FoodTableViewDataSource.m in Sources */,
+				5862225F1C16EB9D00001674 /* main.m in Sources */,
+				5862224C1C16E9FB00001674 /* UserRepositoryImpl.m in Sources */,
+				586222511C16EA7D00001674 /* GetUsersApiImpl.m in Sources */,
+				5862223C1C16E8F800001674 /* AppDelegate.m in Sources */,
+				5862226D1C16F3A300001674 /* MainViewController.m in Sources */,
+				5862226C1C16F3A300001674 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D84D521BF2238A00B01392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586222821C16FEEA00001674 /* UserMockRepository.m in Sources */,
+				58D84D5D1BF2238A00B01392 /* FoodMVPTests.m in Sources */,
+				5862227D1C16FD3800001674 /* MainPresenterMockImpl.m in Sources */,
+				586222871C17012F00001674 /* FoodMockRepository.m in Sources */,
+				586222771C16F6E900001674 /* MainViewMockImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58D84D581BF2238A00B01392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58D84D3C1BF2238A00B01392 /* FoodMVP */;
+			targetProxy = 58D84D571BF2238A00B01392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58D84D4A1BF2238A00B01392 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D84D4B1BF2238A00B01392 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58D84D4F1BF2238A00B01392 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D84D501BF2238A00B01392 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58D84D5E1BF2238A00B01392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		58D84D5F1BF2238A00B01392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58D84D611BF2238A00B01392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodMVP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		58D84D621BF2238A00B01392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodMVP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		58D84D641BF2238A00B01392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoodMVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodMVP.app/FoodMVP";
+			};
+			name = Debug;
+		};
+		58D84D651BF2238A00B01392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoodMVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodMVP.app/FoodMVP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58D84D381BF2238A00B01392 /* Build configuration list for PBXProject "FoodMVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D84D5E1BF2238A00B01392 /* Debug */,
+				58D84D5F1BF2238A00B01392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58D84D601BF2238A00B01392 /* Build configuration list for PBXNativeTarget "FoodMVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D84D611BF2238A00B01392 /* Debug */,
+				58D84D621BF2238A00B01392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58D84D631BF2238A00B01392 /* Build configuration list for PBXNativeTarget "FoodMVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D84D641BF2238A00B01392 /* Debug */,
+				58D84D651BF2238A00B01392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58D84D351BF2238A00B01392 /* Project object */;
+}
