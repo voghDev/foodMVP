@@ -45,7 +45,6 @@
 }
 
 - (void)testThatIHaventFuckedUpTheInitializersBecauseImVeryLikelyToDoTheseThings {
-    // Test that I haven't fuxxed up the initializers
     XCTAssertNotNil(presenter);
     XCTAssertNotNil(repository);
     XCTAssertNotNil(mockView);
