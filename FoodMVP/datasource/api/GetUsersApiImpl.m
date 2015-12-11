@@ -20,6 +20,7 @@
 
 -(NSArray*) get
 {
+    NSArray* ret = [[NSArray alloc] init];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.randomuser.me/"]];
     
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request	 returningResponse:nil error:nil];
@@ -29,8 +30,11 @@
     
     NSLog(@"JSON response:\n%@", receivedString);
     
-    NSArray* users = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:NULL][@"results"];
-    return users ? users : [NSArray alloc];
+    if(!receivedString || [receivedString isEqualToString:@""])
+        return ret;
+    
+    ret = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:nil][@"results"];
+    return ret;
 }
 
 @end

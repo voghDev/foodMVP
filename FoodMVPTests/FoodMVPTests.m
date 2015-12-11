@@ -74,7 +74,7 @@
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Madre mia que performance tiene esto
-        // No hace nada, fijate si es rapido
+        // Fijate si es rapido que no hace nada
     }];
 }
 

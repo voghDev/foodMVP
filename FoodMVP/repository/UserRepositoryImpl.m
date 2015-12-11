@@ -24,8 +24,8 @@
 -(NSArray*) get
 {
     NSObject<GetUsers> *getUsers =
-        [[GetUsersMockImpl alloc] init];
-        //[[GetUsersApiImpl alloc] init];
+        //[[GetUsersMockImpl alloc] init];
+        [[GetUsersApiImpl alloc] init];
     
     return [getUsers get];
 }
