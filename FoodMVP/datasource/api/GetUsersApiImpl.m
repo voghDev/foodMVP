@@ -15,6 +15,7 @@
  */
 
 #import "GetUsersApiImpl.h"
+#import "RandomUserApiMapper.h"
 
 @implementation GetUsersApiImpl
 
@@ -25,15 +26,8 @@
     
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request	 returningResponse:nil error:nil];
     
-    NSString *receivedString = [[NSString alloc] initWithData:responseData
-                                                     encoding:NSASCIIStringEncoding];
+    ret = [[[RandomUserApiMapper alloc] initWithData: responseData] parseUsers];
     
-    NSLog(@"JSON response:\n%@", receivedString);
-    
-    if(!receivedString || [receivedString isEqualToString:@""])
-        return ret;
-    
-    ret = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:nil][@"results"];
     return ret;
 }
 

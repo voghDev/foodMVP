@@ -27,6 +27,7 @@
 		586222821C16FEEA00001674 /* UserMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222811C16FEEA00001674 /* UserMockRepository.m */; };
 		586222871C17012F00001674 /* FoodMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222861C17012F00001674 /* FoodMockRepository.m */; };
 		588CC08C1C1C4764009C6F62 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 588CC08B1C1C4764009C6F62 /* README.md */; };
+		588CC0951C1C5367009C6F62 /* RandomUserApiMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 588CC0941C1C5367009C6F62 /* RandomUserApiMapper.m */; };
 		58D84D4C1BF2238A00B01392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4A1BF2238A00B01392 /* Main.storyboard */; };
 		58D84D4E1BF2238A00B01392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4D1BF2238A00B01392 /* Images.xcassets */; };
 		58D84D511BF2238A00B01392 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4F1BF2238A00B01392 /* LaunchScreen.xib */; };
@@ -94,6 +95,8 @@
 		586222851C17012F00001674 /* FoodMockRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodMockRepository.h; path = repository/FoodMockRepository.h; sourceTree = "<group>"; };
 		586222861C17012F00001674 /* FoodMockRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodMockRepository.m; path = repository/FoodMockRepository.m; sourceTree = "<group>"; };
 		588CC08B1C1C4764009C6F62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		588CC0931C1C5367009C6F62 /* RandomUserApiMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomUserApiMapper.h; path = datasource/api/mapper/RandomUserApiMapper.h; sourceTree = "<group>"; };
+		588CC0941C1C5367009C6F62 /* RandomUserApiMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomUserApiMapper.m; path = datasource/api/mapper/RandomUserApiMapper.m; sourceTree = "<group>"; };
 		58D84D3D1BF2238A00B01392 /* FoodMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D84D411BF2238A00B01392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D84D4B1BF2238A00B01392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		580331341BF4D1FE00D934B9 /* datasource */ = {
 			isa = PBXGroup;
 			children = (
+				588CC0921C1C535B009C6F62 /* mapper */,
 				586222521C16EA8800001674 /* GetFoodMockImpl.h */,
 				586222531C16EA8800001674 /* GetFoodMockImpl.m */,
 				586222541C16EA8800001674 /* GetUsersMockImpl.h */,
@@ -208,6 +212,15 @@
 				586222811C16FEEA00001674 /* UserMockRepository.m */,
 			);
 			name = repository;
+			sourceTree = "<group>";
+		};
+		588CC0921C1C535B009C6F62 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+				588CC0931C1C5367009C6F62 /* RandomUserApiMapper.h */,
+				588CC0941C1C5367009C6F62 /* RandomUserApiMapper.m */,
+			);
+			name = mapper;
 			sourceTree = "<group>";
 		};
 		58C75C041C05F5260037A085 /* segue */ = {
@@ -452,6 +465,7 @@
 				5862224B1C16E9FB00001674 /* MockFoodRepository.m in Sources */,
 				586222731C16F3B300001674 /* MainPresenterImpl.m in Sources */,
 				586222391C16E8DB00001674 /* User.m in Sources */,
+				588CC0951C1C5367009C6F62 /* RandomUserApiMapper.m in Sources */,
 				588CC08C1C1C4764009C6F62 /* README.md in Sources */,
 				586222651C16F38700001674 /* NavigateToDetailSegue.m in Sources */,
 				586222381C16E8DB00001674 /* FoodItem.m in Sources */,

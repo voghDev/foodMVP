@@ -14,11 +14,16 @@
  * limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import <Foundation/Foundation.h>
+#import "User.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
-}
+@interface RandomUserApiMapper : NSObject
+
+@property(strong, nonatomic) NSData* data;
+
+-(NSArray*) parseUsers;
+-(NSArray*) parseUsersUsingData: (NSData*) data;
+-(instancetype) initWithData: (NSData*) data;
+
+@end
+
