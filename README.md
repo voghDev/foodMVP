@@ -11,8 +11,8 @@ Thanks to
 
 These are some repos i got ideas from:
 
-[RandomUser pod from Omar Abdelhafith][3]
-[iOSModelViewPresenter example from dgadd][4]
+* [RandomUser pod from Omar Abdelhafith][3]
+* [iOSModelViewPresenter example from dgadd][4]
 
 TODO
 ----
