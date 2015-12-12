@@ -6,6 +6,14 @@ Contributors
 
 * Olmo Gallegos Hernández - [@voghDev][1] - [mobiledevstories.com][2]
 
+Thanks to
+---------
+
+These are some repos i got ideas from:
+
+[RandomUser pod from Omar Abdelhafith][3]
+[iOSModelViewPresenter example from dgadd][4]
+
 TODO
 ----
 
@@ -15,6 +23,8 @@ TODO
 
 [1]: http://twitter.com/voghDev
 [2]: http://www.mobiledevstories.com
+[3]: https://github.com/oarrabi/RandomUser
+[4]: https://github.com/dgadd/iOSModelViewPresenter
 
 License
 -------
