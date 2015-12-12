@@ -26,6 +26,7 @@
 		5862227D1C16FD3800001674 /* MainPresenterMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862227C1C16FD3800001674 /* MainPresenterMockImpl.m */; };
 		586222821C16FEEA00001674 /* UserMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222811C16FEEA00001674 /* UserMockRepository.m */; };
 		586222871C17012F00001674 /* FoodMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222861C17012F00001674 /* FoodMockRepository.m */; };
+		588CC08C1C1C4764009C6F62 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 588CC08B1C1C4764009C6F62 /* README.md */; };
 		58D84D4C1BF2238A00B01392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4A1BF2238A00B01392 /* Main.storyboard */; };
 		58D84D4E1BF2238A00B01392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4D1BF2238A00B01392 /* Images.xcassets */; };
 		58D84D511BF2238A00B01392 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4F1BF2238A00B01392 /* LaunchScreen.xib */; };
@@ -92,6 +93,7 @@
 		586222841C1700F400001674 /* FoodRepositoryStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FoodRepositoryStatus.h; path = status/FoodRepositoryStatus.h; sourceTree = "<group>"; };
 		586222851C17012F00001674 /* FoodMockRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodMockRepository.h; path = repository/FoodMockRepository.h; sourceTree = "<group>"; };
 		586222861C17012F00001674 /* FoodMockRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodMockRepository.m; path = repository/FoodMockRepository.m; sourceTree = "<group>"; };
+		588CC08B1C1C4764009C6F62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		58D84D3D1BF2238A00B01392 /* FoodMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D84D411BF2238A00B01392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D84D4B1BF2238A00B01392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		58D84D3F1BF2238A00B01392 /* FoodMVP */ = {
 			isa = PBXGroup;
 			children = (
+				588CC08B1C1C4764009C6F62 /* README.md */,
 				580331351BF4D20E00D934B9 /* repository */,
 				580331341BF4D1FE00D934B9 /* datasource */,
 				58D84D691BF223CD00B01392 /* global */,
@@ -449,6 +452,7 @@
 				5862224B1C16E9FB00001674 /* MockFoodRepository.m in Sources */,
 				586222731C16F3B300001674 /* MainPresenterImpl.m in Sources */,
 				586222391C16E8DB00001674 /* User.m in Sources */,
+				588CC08C1C1C4764009C6F62 /* README.md in Sources */,
 				586222651C16F38700001674 /* NavigateToDetailSegue.m in Sources */,
 				586222381C16E8DB00001674 /* FoodItem.m in Sources */,
 				586222621C16F2E200001674 /* FoodTableViewDataSource.m in Sources */,
