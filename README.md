@@ -9,7 +9,7 @@ Contributors
 TODO
 ----
 
-- [ ] Do a proper parsing of the API response (api-layer models / object mapper)
+- [X] Do a proper parsing of the API response (api-layer models / object mapper)
 - [ ] Do an Asynchronous version of the request with Observers
 - [ ] Improve UI to make it more beautiful and fix the iPhone/iPad storyboard thing
 
