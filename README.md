@@ -1,6 +1,8 @@
 # foodMVP
 An experiment about implementing MVP pattern for iOS, in Objective-C
 
+Features a dummy list of dishes (aka Food Items), and a detail view with users who liked them, querying different Data Sources (mock implementations, random user API).
+
 Contributors
 ------------
 
