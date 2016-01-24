@@ -33,6 +33,9 @@
 {
     NSMutableArray* ret = [[NSMutableArray alloc] init];
     
+    if(!_data)
+        return ret;
+    
     NSDictionary* dict = [NSJSONSerialization JSONObjectWithData:_data options:NSJSONReadingAllowFragments error:nil];
     
     if ([dict isKindOfClass:[NSDictionary class]] && dict[@"results"]) {

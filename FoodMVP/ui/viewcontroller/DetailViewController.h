@@ -26,8 +26,8 @@
 
 @property FoodItem* foodItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
-@property (weak, nonatomic) IBOutlet UILabel *lblUsers;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
+@property (weak, nonatomic) IBOutlet UIImageView* image;
+@property (weak, nonatomic) IBOutlet UILabel* lblTitle;
 
 @end

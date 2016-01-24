@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -70,38 +71,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-Ic-HGD">
-                                <rect key="frame" x="74" y="236" width="452" height="31"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-yf-Lph">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="290" y="190" width="20" height="20"/>
+                                </variation>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.png" translatesAutoresizingMaskIntoConstraints="NO" id="FOO-PF-ira">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <animations/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="47" height="400"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrD-DC-NP5">
+                                <rect key="frame" x="20" y="179" width="560" height="96"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="0.0" width="580" height="200"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading users who liked..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry4-Fd-gBv">
-                                <rect key="frame" x="93" y="276" width="415" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.96470594409999999" green="0.1098039299" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-yf-Lph">
-                                <rect key="frame" x="290" y="324" width="20" height="20"/>
-                                <animations/>
-                            </activityIndicatorView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FrD-DC-NP5" firstAttribute="top" secondItem="FOO-PF-ira" secondAttribute="top" constant="179" id="Cru-l0-OAA"/>
+                            <constraint firstItem="FrD-DC-NP5" firstAttribute="leading" secondItem="FOO-PF-ira" secondAttribute="leading" constant="20" id="DL0-sH-Gx9"/>
+                            <constraint firstItem="FOO-PF-ira" firstAttribute="top" secondItem="Di1-J1-nLv" secondAttribute="topMargin" id="YLw-F9-ph2"/>
+                            <constraint firstItem="FrD-DC-NP5" firstAttribute="trailing" secondItem="FOO-PF-ira" secondAttribute="trailing" constant="-20" id="d5y-DO-e6w"/>
+                            <constraint firstItem="FOO-PF-ira" firstAttribute="leading" secondItem="Di1-J1-nLv" secondAttribute="leadingMargin" constant="-20" id="dbv-h5-yhd"/>
+                            <constraint firstItem="Keh-yf-Lph" firstAttribute="centerY" secondItem="Di1-J1-nLv" secondAttribute="centerY" id="dhI-vb-I1Q"/>
+                            <constraint firstItem="Keh-yf-Lph" firstAttribute="centerX" secondItem="Di1-J1-nLv" secondAttribute="centerX" id="i6s-82-eA9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FOO-PF-ira" secondAttribute="trailing" constant="-20" id="iVt-jl-Jhu"/>
+                            <constraint firstItem="FrD-DC-NP5" firstAttribute="bottom" secondItem="FOO-PF-ira" secondAttribute="bottom" constant="-25" id="kll-hh-2IL"/>
+                            <constraint firstItem="cLC-BH-f8p" firstAttribute="top" secondItem="FOO-PF-ira" secondAttribute="bottom" constant="300" id="xyj-b3-dfN"/>
+                        </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="YLw-F9-ph2"/>
+                                <exclude reference="dbv-h5-yhd"/>
+                                <exclude reference="iVt-jl-Jhu"/>
+                                <exclude reference="Cru-l0-OAA"/>
+                                <exclude reference="DL0-sH-Gx9"/>
+                                <exclude reference="d5y-DO-e6w"/>
+                                <exclude reference="kll-hh-2IL"/>
+                                <exclude reference="dhI-vb-I1Q"/>
+                                <exclude reference="i6s-82-eA9"/>
+                                <exclude reference="xyj-b3-dfN"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="CBt-DX-yj1"/>
                     <connections>
-                        <outlet property="lblTitle" destination="fDa-Ic-HGD" id="Vn2-F4-ZB1"/>
-                        <outlet property="lblUsers" destination="Ry4-Fd-gBv" id="LYz-R5-3kb"/>
+                        <outlet property="image" destination="FOO-PF-ira" id="wpF-Y5-W4i"/>
+                        <outlet property="lblTitle" destination="FrD-DC-NP5" id="zJi-10-PbY"/>
                         <outlet property="loading" destination="Keh-yf-Lph" id="qXW-HV-n8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8de-xf-Fy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831" y="-585"/>
+            <point key="canvasLocation" x="1840" y="-596"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XEM-eI-eLE">
@@ -123,4 +156,7 @@
             <point key="canvasLocation" x="215" y="-596"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sample.png" width="800" height="450"/>
+    </resources>
 </document>

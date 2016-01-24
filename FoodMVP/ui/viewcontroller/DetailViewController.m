@@ -52,7 +52,7 @@
 
 -(void) onListReceived:(NSArray *)array
 {
-    [_lblUsers setText:[NSString stringWithFormat:@"%ld users liked this recipe",  [array count]] ];
+    // [_lblUsers setText:[NSString stringWithFormat:@"%ld users liked this recipe",  [array count]] ];
     // TODO fill _tableView
 }
 

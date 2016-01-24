@@ -28,6 +28,7 @@
 		586222871C17012F00001674 /* FoodMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222861C17012F00001674 /* FoodMockRepository.m */; };
 		588CC08C1C1C4764009C6F62 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 588CC08B1C1C4764009C6F62 /* README.md */; };
 		588CC0951C1C5367009C6F62 /* RandomUserApiMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 588CC0941C1C5367009C6F62 /* RandomUserApiMapper.m */; };
+		58C87A3B1C54DFD900EDF7B9 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 58C87A3A1C54DFD900EDF7B9 /* sample.png */; };
 		58D84D4C1BF2238A00B01392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4A1BF2238A00B01392 /* Main.storyboard */; };
 		58D84D4E1BF2238A00B01392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4D1BF2238A00B01392 /* Images.xcassets */; };
 		58D84D511BF2238A00B01392 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D84D4F1BF2238A00B01392 /* LaunchScreen.xib */; };
@@ -97,6 +98,7 @@
 		588CC08B1C1C4764009C6F62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		588CC0931C1C5367009C6F62 /* RandomUserApiMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomUserApiMapper.h; path = datasource/api/mapper/RandomUserApiMapper.h; sourceTree = "<group>"; };
 		588CC0941C1C5367009C6F62 /* RandomUserApiMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomUserApiMapper.m; path = datasource/api/mapper/RandomUserApiMapper.m; sourceTree = "<group>"; };
+		58C87A3A1C54DFD900EDF7B9 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		58D84D3D1BF2238A00B01392 /* FoodMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D84D411BF2238A00B01392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D84D4B1BF2238A00B01392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -232,6 +234,30 @@
 			name = segue;
 			sourceTree = "<group>";
 		};
+		58C87A371C54DF5B00EDF7B9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				58C87A391C54DF6A00EDF7B9 /* img */,
+				58C87A381C54DF6400EDF7B9 /* fonts */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		58C87A381C54DF6400EDF7B9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		58C87A391C54DF6A00EDF7B9 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				58C87A3A1C54DFD900EDF7B9 /* sample.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		58D84D341BF2238A00B01392 = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +279,7 @@
 		58D84D3F1BF2238A00B01392 /* FoodMVP */ = {
 			isa = PBXGroup;
 			children = (
+				58C87A371C54DF5B00EDF7B9 /* assets */,
 				588CC08B1C1C4764009C6F62 /* README.md */,
 				580331351BF4D20E00D934B9 /* repository */,
 				580331341BF4D1FE00D934B9 /* datasource */,
@@ -442,6 +469,7 @@
 				58D84D4C1BF2238A00B01392 /* Main.storyboard in Resources */,
 				58D84D511BF2238A00B01392 /* LaunchScreen.xib in Resources */,
 				58D84D4E1BF2238A00B01392 /* Images.xcassets in Resources */,
+				58C87A3B1C54DFD900EDF7B9 /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
