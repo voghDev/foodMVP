@@ -15,21 +15,10 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "DetailPresenterImpl.h"
-#import "UserRepository.h"
-#import "FoodItem.h"
-#import "BaseViewController.h"
 
-@interface DetailViewController : BaseViewController< DetailView >
-
-@property DetailPresenterImpl* presenter;
-@property id< UserRepository > userRepository;
-
-@property FoodItem* foodItem;
-
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
-@property (weak, nonatomic) IBOutlet UIImageView* image;
-@property (weak, nonatomic) IBOutlet UILabel* lblTitle;
-@property (weak, nonatomic) IBOutlet UITextView* txtDescription;
+/*
+ * This class can contain common behavior to all ViewControllers, like analytics
+ */
+@interface BaseViewController : UIViewController
 
 @end

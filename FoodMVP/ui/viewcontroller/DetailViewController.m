@@ -38,6 +38,7 @@
 -(void) showFood:(FoodItem*) item
 {
     [_lblTitle setText:[item foodName] ];
+    [_txtDescription setText: [item description]];
 }
 
 -(void) showLoading

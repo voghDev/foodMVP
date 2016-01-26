@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		584C150D1C57B16200F17740 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 584C150C1C57B16200F17740 /* BaseViewController.m */; };
 		586222381C16E8DB00001674 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222351C16E8DB00001674 /* FoodItem.m */; };
 		586222391C16E8DB00001674 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 586222371C16E8DB00001674 /* User.m */; };
 		5862223C1C16E8F800001674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862223B1C16E8F800001674 /* AppDelegate.m */; };
@@ -49,6 +50,8 @@
 		584590681C174831003A4A1B /* MainPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPresenter.h; path = ui/presenter/MainPresenter.h; sourceTree = "<group>"; };
 		584590691C174973003A4A1B /* DetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailPresenter.h; path = ui/presenter/DetailPresenter.h; sourceTree = "<group>"; };
 		5845906A1C17508D003A4A1B /* MainPresenterStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPresenterStatus.h; path = status/MainPresenterStatus.h; sourceTree = "<group>"; };
+		584C150B1C57B16200F17740 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ui/viewcontroller/BaseViewController.h; sourceTree = "<group>"; };
+		584C150C1C57B16200F17740 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ui/viewcontroller/BaseViewController.m; sourceTree = "<group>"; };
 		586222341C16E8DB00001674 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodItem.h; path = global/model/FoodItem.h; sourceTree = "<group>"; };
 		586222351C16E8DB00001674 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodItem.m; path = global/model/FoodItem.m; sourceTree = "<group>"; };
 		586222361C16E8DB00001674 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = global/model/User.h; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 				586222691C16F3A300001674 /* DetailViewController.m */,
 				5862226A1C16F3A300001674 /* MainViewController.h */,
 				5862226B1C16F3A300001674 /* MainViewController.m */,
+				584C150B1C57B16200F17740 /* BaseViewController.h */,
+				584C150C1C57B16200F17740 /* BaseViewController.m */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586222571C16EA8800001674 /* GetUsersMockImpl.m in Sources */,
+				584C150D1C57B16200F17740 /* BaseViewController.m in Sources */,
 				586222721C16F3B300001674 /* DetailPresenterImpl.m in Sources */,
 				586222561C16EA8800001674 /* GetFoodMockImpl.m in Sources */,
 				5862224B1C16E9FB00001674 /* MockFoodRepository.m in Sources */,

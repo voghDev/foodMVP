@@ -95,6 +95,14 @@
                                     <rect key="frame" x="20" y="0.0" width="580" height="200"/>
                                 </variation>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z0R-hY-fo3">
+                                <rect key="frame" x="0.0" y="299" width="600" height="143"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,6 +138,7 @@
                         <outlet property="image" destination="FOO-PF-ira" id="wpF-Y5-W4i"/>
                         <outlet property="lblTitle" destination="FrD-DC-NP5" id="zJi-10-PbY"/>
                         <outlet property="loading" destination="Keh-yf-Lph" id="qXW-HV-n8l"/>
+                        <outlet property="txtDescription" destination="z0R-hY-fo3" id="yD9-jq-u0r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8de-xf-Fy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
